@@ -1,8 +1,9 @@
 body {
-    background: #fff;
-    color: #333;
+    background: #12181B;
+    color: rgb(253, 253, 253);
     font-family: 'Arial';
     overflow-y: hidden;
+
 }
 
 a, a:visited{
@@ -37,7 +38,7 @@ h1 {
 }
 
 #game_board td {
-    border: 1px dashed #808080;
+    border: 1px double  #f6f2f269;
     position: relative;
     width: 50px;
     height: 50px;
@@ -45,7 +46,7 @@ h1 {
 }
 
 .hover {
-    background-color: #F4F4F4;
+    background-color: #f4f4f42d;
 }
 
 #coin {
@@ -70,7 +71,7 @@ h1 {
 #game_board .human-coin,
 .human-coin {
     border-radius: 50%;
-    background: #333;
+    background: rgb(255, 255, 255);
 }
 
 #game_board .cpu-coin,
@@ -80,7 +81,7 @@ h1 {
 }
 
 #game_board .win {
-    border-radius: 50%;
+    border-radius: 100%;
     animation: animationFrames 1s infinite;
     -webkit-animation: animationFrames 1s infinite;
     -moz-animation: animationFrames 1s infinite;
@@ -89,7 +90,7 @@ h1 {
 }
 
 @keyframes animationFrames{
-    50% {
+    100% {
         opacity:0.6;
     }
     100% {
@@ -154,7 +155,7 @@ h1 {
 }
 
 input {
-    border: 1px solid #808080;
+    border: 1px solid #ffffff;
     margin: 1px;
     outline: none;
 }
@@ -164,15 +165,16 @@ input {
 }
 
 .save {
-    border: 1px solid #808080;
-    margin: 1px;
-    outline: none;
-    width: 140px;
-    cursor: pointer;
+    padding: auto;
+        border-radius: 50px;
+        background : #48EDA8;
+        padding: 10px 10px 10px;
+       font-size: 15px;
+        color: #12181B;
 }
 
 .save:hover, .save:active {
-    background: #dadada;
+    background: #ffffff;
 }
 
 #loading {
@@ -193,6 +195,8 @@ p {
 
 .header {
     margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
 }
 
 .status-running, .status-won, .status-lost {
@@ -217,11 +221,13 @@ p {
 }
 
 select {
-    background: #fff;
-    margin: 1px;
-    border: 1px solid #808080;
-    outline: none;
-    width: 140px;
+    background: rgb(255, 255, 255);
+    padding: auto;
+    border-radius: 50px;
+    background : #48EDA8;
+    padding: 10px 10px 10px;
+   font-size: 15px;
+    color: #12181B;
 }
 
 .text {
