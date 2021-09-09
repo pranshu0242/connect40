@@ -200,7 +200,7 @@ p {
 }
 
 .status-running, .status-won, .status-lost {
-    padding: 0px 2px;
+    padding: 5px 7px;
     color: #333;
 }
 
