@@ -9,12 +9,14 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-       
+        <div id="navigation">
+            <span class="title">Connect Four  -</span> 
+        </div>
         
         <div id="container">
-            <h1 class="header-text">Minimax Algorithm</h1>
+            <h1 class="header-text">Connect4</h1>
             <p class="text subheader-text">
-                Artificial Intelligence based on the Minimax- and α-β-Pruning principles (jQuery).
+                Artificial Intelligence based on the Minimax.
             </p>
 
             <div class="box-left">
@@ -25,11 +27,11 @@
 
             <div class="box-right">
                 <div id="options">
-                    <p class="header">Algorithm</p>
+                    <p class="header">Mode</p>
                     <p>
                         <select id="algorithm-select" autocomplete="off">
-                            <option value="minimax" selected>Minimax</option>
-                            <option value="alphabeta">Alpha-Beta</option>
+                            <option value="minimax" selected>Singel Player</option>
+                            <option value="alphabeta">Multiplayer offline</option>
                         </select>
                     </p>
                     <p class="header">Difficulty</p>
@@ -45,6 +47,8 @@
                             <option value="8">Depth 8 (Tougher)</option>
                         </select>
                     </p>
+                    <br>
+                    
                     <p><button class="save" onclick="Game.restartGame();" type="submit">Restart game</button></p>
                 </div>
 
