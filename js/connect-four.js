@@ -258,9 +258,7 @@ Game.prototype.markWin = function() {
 }
 
 Game.prototype.restartGame = function() {
-    if (confirm('Game is going to be restarted.\nAre you sure?')) {
-        // Dropdown value
-        var difficulty = document.getElementById('difficulty');
+     var difficulty = document.getElementById('difficulty');
         var depth = difficulty.options[difficulty.selectedIndex].value;
         that.depth = depth;
         that.status = 0;
@@ -277,7 +275,6 @@ Game.prototype.restartGame = function() {
         $('td').hover(function() {
             $(this).parents('table').find('col:eq('+$(this).index()+')').toggleClass('hover');
         });
-    }
 }
 
 /**
