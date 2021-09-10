@@ -49,17 +49,19 @@
                     </p>
                     <br>
                     
-                    <p><button class="save" onclick="Game.restartGame();" type="submit">Restart game</button></p>
+                    <p><button class="save" onclick="Game.restartGame();" type="reset">Restart game</button></p>
                 </div>
 
                 <div id="debug">
-                    <p><strong>AI debugging</strong></p>
-                    <p>Generated with <span id="ai-iterations">?</span> iterations</p>
-                    <p>Measured with <span id="ai-time">?</span></p>
-                    <p><span id="ai-column">Column: ?</span></p>
-                    <p><span id="ai-score">Score: ?</span></p>
+                    <p>Status: <br> <br> <span id="status" class="status-running">Running</span></p>
+                    <br>
+                    <p class="aidebug"><strong>AI debugging</strong></p>
+                    <p class="aidebug">Generated with <span id="ai-iterations">?</span> iterations</p>
+                    <p class="aidebug">Measured with <span id="ai-time">?</span></p>
+                    <p class="aidebug"><span id="ai-column">Column: ?</span></p>
+                    <p class="aidebug"><span id="ai-score">Score: ?</span></p>
                     <br/>
-                    <p>Status: <span id="status" class="status-running">running</span></p>
+                
                 </div>
             </div>
         </div>
