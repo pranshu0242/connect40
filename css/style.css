@@ -3,7 +3,21 @@ body {
     color: rgb(253, 253, 253);
     font-family: 'Arial';
     overflow-y: hidden;
+    background: linear-gradient(-45deg, #ee7752, #bf3ce7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 a, a:visited{
@@ -43,10 +57,11 @@ h1 {
     width: 50px;
     height: 50px;
     cursor: pointer;
+
 }
 
 .hover {
-    background-color: #f4f4f42d;
+    background-color: #0000002d;
 }
 
 #coin {
@@ -82,11 +97,13 @@ h1 {
 
 #game_board .win {
     border-radius: 100%;
+    background-color: #12181B;
     animation: animationFrames 1s infinite;
     -webkit-animation: animationFrames 1s infinite;
     -moz-animation: animationFrames 1s infinite;
     -o-animation: animationFrames 1s infinite;
     -ms-animation: animationFrames 1s infinite;
+    ;
 }
 
 @keyframes animationFrames{
@@ -95,6 +112,7 @@ h1 {
     }
     100% {
         opacity:1;
+        color: #000000;
     }
 }
 
@@ -309,32 +327,4 @@ select {
 }
 .aidebug {
     font-size: 10px;
-}
-.bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
-}
-
-.bg3 {
-  animation-duration:5s;
-}
-@keyframes slide {
-  0% {
-    transform:translateX(-25%);
-  }
-  100% {
-    transform:translateX(25%);
-  }
 }
