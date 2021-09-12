@@ -1,19 +1,5 @@
 <!doctype html>
 <html>
-    <style>
-    .button {
-  border: none;
-  color: white;
-  padding: 25px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-    </style>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,10 +9,10 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        
-       <div class="bg"></div>
-       <div class="bg bg2"></div>
-       <div class="bg bg3"></div>
+       
+        <div id="navigation">
+            <span class="title">Connect Four  -</span> 
+        </div>
         
         <div id="container">
             <h1 class="header-text">Connect4</h1>
@@ -46,9 +32,8 @@
                     <p>
                         <select id="algorithm-select" autocomplete="off">
                             <option value="minimax" selected>Singel Player</option>
-                             <option value="alphabeta">Multiplayer offline</option>
-                          </select>
-                      
+                            <option value="alphabeta">Multiplayer offline</option>
+                        </select>
                     </p>
                     <p class="header">Difficulty</p>
                     <p>
@@ -59,7 +44,9 @@
                             <option value="4" selected="selected">Depth 4 (Easy)</option>
                             <option value="5">Depth 5</option>
                             <option value="6">Depth 6 (Moderate)</option>
-                    </select>
+                            <option value="7">Depth 7</option>
+                            <option value="8">Depth 8 (Tougher)</option>
+                        </select>
                     </p>
                     <br>
                     
@@ -67,7 +54,8 @@
                 </div>
 
                 <div id="debug">
-                   <h2>GAME : <span id="status" class="status-running"> Is running</span></h2>
+                    <p>Status: <br> <br> <span id="status" class="status-running">Running</span></p>
+                    <br>
                     <br>
                     <p class="aidebug"><strong>AI debugging</strong></p>
                     <p class="aidebug">Generated with <span id="ai-iterations">?</span> iterations</p>
