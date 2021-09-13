@@ -372,3 +372,23 @@ a.btn1 {
   a.btn2:hover {
     border-color: rgb(255, 255, 255);
   }
+.btnp1{
+      border:solid white;
+      border-radius: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top:5px ;
+      padding-bottom:7px ;
+      color: white;
+      background-color: white;
+  }
+  .btnp2{
+    border:solid #DC143C;
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px ;
+    padding-bottom:7px ;
+    color: #DC143C;
+    background-color: #DC143C;
+}
