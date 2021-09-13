@@ -233,16 +233,16 @@ p {
 }
 
 .status-won {
-    background: #5FBF5F;
+    background: #ffffff;
     border-radius: 25px;
-    padding: 20px 10px 20px;
+    padding: 10px 10px 10px;
    font-size: 15px;
     color: #12181B;
 }
 
 
 .status-lost {
-    background: #F36051;
+    background: #14dc57;
     border-radius: 50px;
     padding: 10px 10px 10px;
    font-size: 15px;
@@ -327,7 +327,8 @@ select {
     }
 }
 .aidebug {
-    font-size: 10px;
+    font-size: 1px;
+   
 }
 a.btn1 {
     display: inline-block;
@@ -369,5 +370,25 @@ a.btn1 {
   }
   
   a.btn2:hover {
-    border-color: rgb(255, 255, 255);
+    border-color: white;
   }
+  .btnp1{
+      border:solid white;
+      border-radius: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top:5px ;
+      padding-bottom:7px ;
+      color: white;
+      background-color: white;
+  }
+  .btnp2{
+    border:solid #DC143C;
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:5px ;
+    padding-bottom:7px ;
+    color: #DC143C;
+    background-color: #DC143C;
+}
