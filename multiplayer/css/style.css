@@ -370,9 +370,9 @@ a.btn1 {
   }
   
   a.btn2:hover {
-    border-color: rgb(255, 255, 255);
+    border-color: white;
   }
-.btnp1{
+  .btnp1{
       border:solid white;
       border-radius: 100%;
       padding-left: 10px;
