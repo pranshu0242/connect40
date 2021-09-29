@@ -259,25 +259,16 @@ Game.prototype.markWin = function() {
     }
 }
 
-Game.prototype.restartGame = function() {
-     var difficulty = document.getElementById('difficulty');
-        var depth = difficulty.options[difficulty.selectedIndex].value;
-        that.depth = depth;
-        that.status = 0;
-        that.round = 0;
-        that.init();
-        document.getElementById('ai-iterations').innerHTML = "?";
-        document.getElementById('ai-time').innerHTML = "?";
-        document.getElementById('ai-column').innerHTML = "Column: ?";
-        document.getElementById('ai-score').innerHTML = "Score: ?";
-        document.getElementById('game_board').className = "";
-        that.updateStatus();
+Game.prototype.restartGame = function() 
+{
+    window.Game = new Game();
 
-        // Re-assign hover
-        $('td').hover(function() {
-            $(this).parents('table').find('col:eq('+$(this).index()+')').toggleClass('hover');
-        });
+    // Hover background, now using jQuery
+    $('td').hover(function() {
+        $(this).parents('table').find('col:eq('+$(this).index()+')').toggleClass('hover');
+    });
 }
+    
 
 /**
  * Start game
