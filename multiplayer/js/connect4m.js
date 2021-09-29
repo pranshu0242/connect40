@@ -261,7 +261,7 @@ Game.prototype.markWin = function() {
 
 Game.prototype.restartGame = function() 
 {
-    window.Game = new Game();
+    window.location.reload();
 
     // Hover background, now using jQuery
     $('td').hover(function() {
